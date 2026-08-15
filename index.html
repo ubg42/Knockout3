@@ -75,10 +75,6 @@
     </div>
 
     <script>
-      alert(
-        "multiplayer is a bit buggy and laggy if anything multiplayer related breaks js refresh | ported by sexyplankton",
-      );
-
       const PART_FILES = [
         { base: "Build/knockout[8]-mirraSDK[5.1.2].data.br", label: "CheeseRolling.data" },
         { base: "Build/knockout[8]-mirraSDK[5.1.2].wasm.br", label: "CheeseRolling.wasm" },
@@ -223,12 +219,12 @@
         }
 
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/CheeseRollingWeb.loader.js";
+        var loaderUrl = buildUrl + "/knockout[8]-mirraSDK[5.1.2].js";
         var config = {
           dataUrl:
             assembledBlobs["Build/knockout[8]-mirraSDK[5.1.2].data.br"] ||
             buildUrl + "/knockout[8]-mirraSDK[5.1.2].data.br",
-          frameworkUrl: buildUrl + "/CheeseRollingWeb.framework.js",
+          frameworkUrl: buildUrl + "/knockout[8]-mirraSDK[5.1.2].framework.js",
           codeUrl:
             assembledBlobs["Build/knockout[8]-mirraSDK[5.1.2].wasm.br"] ||
             buildUrl + "/knockout[8]-mirraSDK[5.1.2].wasm.br",
